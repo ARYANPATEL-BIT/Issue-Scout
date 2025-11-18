@@ -1,3 +1,4 @@
 Aryan , 18/11/2015
 
-1. Set up react folder
+1. Set up react folder.
+2. installed tailwind.
