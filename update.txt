@@ -2,3 +2,4 @@ Aryan , 18/11/2015
 
 1. Set up react folder.
 2. installed tailwind.
+3. Learning basics of React.
