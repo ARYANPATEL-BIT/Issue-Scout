@@ -13,3 +13,8 @@ pradhyum , 19/11/2025
 1. created the Home Screen 
 2. created the Login Page
 3. linked with FireBase in a local repo
+
+
+Aryan Patel , 19/11/2025
+
+1. created the main Screen 
