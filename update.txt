@@ -1,3 +1,15 @@
 Aryan , 18/11/2015
 
 1. Set up react folder
+
+
+Pradhyum , 18/11/2025
+
+1. created the UI for the Home Screen and login page using Figma
+
+
+pradhyum , 19/11/2025
+
+1. created the Home Screen 
+2. created the Login Page
+3. linked with FireBase in a local repo
