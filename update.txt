@@ -1,6 +1,7 @@
 Aryan , 18/11/2015
 
 1. Set up react folder
+2. SetUp the Tailwindcss
 
 
 Pradhyum , 18/11/2025
