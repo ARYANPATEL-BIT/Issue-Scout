@@ -19,3 +19,9 @@ pradhyum , 19/11/2025
 Aryan Patel , 19/11/2025
 
 1. created the main Screen UI
+
+
+pradhyum , 20/11/2025
+
+1. writing code for HomePage
+
