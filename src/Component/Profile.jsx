@@ -3,12 +3,12 @@
 function Profile(){
 
     return(
-        <div className="w-full bg-blue-950">
-          <div className="logo">
-            <img src="" alt="" />
+        <div className="profile bg-#">
+          <div className="profile-pic">
+            <img className="" src="" alt="" />
           </div>
-          <div className="name text-white text-4xl text-bold">Aryan Patel</div>
-          <div className="email text-white">aryan.patel@example.com</div>
+          <div className="user-name">Aryan Patel</div>
+          <div className="user-email">aryan.patel@example.com</div>
         </div>
     )
 
