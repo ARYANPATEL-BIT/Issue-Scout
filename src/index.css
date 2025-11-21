@@ -1,8 +1,11 @@
+/* Navbar */
+
 .navbar{
-    background-color: #21262d;
+    background-color: #161b22;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px #c9d1d9;
 }
 
 .navbar .logo-text{
@@ -47,4 +50,49 @@
 
 .toggle.active{
     background-color: #21262d;
+}
+
+
+
+
+
+
+/* Profile */
+
+.profile{
+    border: 1px solid #30363d;
+    background-color: #161b22;
+}
+.profile .profile-section{
+    display: flex;
+    align-items: center;
+    margin:20px;
+    margin-left: 35px;
+}
+
+.profile .picture{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.profile .details{
+    display:flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.profile .user-name{
+    font-size: 27px;
+    font-weight: 600;
+    color: #c9d1d9;
+    padding: 5px;
+    
+}
+
+.profile .user-email{
+    font-size: 15px;
+    font-weight: 600;
+    color: #8b949e;
+    padding: 5px;
 }
