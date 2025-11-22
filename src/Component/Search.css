@@ -1,0 +1,7 @@
+.org-text {
+    display: block;
+    font-weight: bold;
+    font-family: -apple-system,system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #c9d1d9;
+    font-size: 20px;
+}
