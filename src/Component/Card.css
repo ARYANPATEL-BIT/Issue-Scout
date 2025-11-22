@@ -1,3 +1,10 @@
+.org-container{
+    display:flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 20px;
+}
+
 .organization-list{
     background-color: #161b22;
     display:block;
@@ -5,8 +12,8 @@
     align-items: center;
     border: 1px solid #8b949e;
     border-radius: 6px;
-    height: 100px;
-    width: 80%;
+    height: 150px;
+    width: 80vw;
 }
 
 .organization-list .org-name{
@@ -14,18 +21,23 @@
     font-size: 18px;
     margin-bottom: 4px;
     font-weight: 600;
-
+    padding-top: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 7px;
 }
 
 .organization-list .org-details{
     color: #8b949e;
     font-size: 14px;
     box-sizing: border-box;
+    padding-left: 20px;
 }
 
 .issue-details{
     display: flex;
     flex-direction: row;
+    padding: 10px;
 }
 
 .open-issue{
@@ -34,6 +46,8 @@
     align-items: center;
     color: #8b949e;
     gap: 5px;
+    font-size: 14px;
+    padding: 10px;
 }
 
 .close-issue{
@@ -41,10 +55,16 @@
     justify-content: center;
     align-items: center;
     color:#8b949e;
+    font-size: 14px;
+    gap: 5px;
+    padding: 10px;
 }
 .contributors{
     display: flex;
     justify-content: center;
     align-items: center;
     color: #8b949e;
+    font-size: 14px;
+    gap: 5px;
+    padding: 10px;
 }

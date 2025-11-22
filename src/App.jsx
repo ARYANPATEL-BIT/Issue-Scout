@@ -4,6 +4,7 @@ import Profile from './Component/Profile'
 import Navbar  from './Component/Navbar'
 import Search from './Component/Search'
 
+
 function App() {
   return(
     <div>
@@ -12,7 +13,6 @@ function App() {
       <Profile />
 
       <Search />
-
     </div>
   )
 }

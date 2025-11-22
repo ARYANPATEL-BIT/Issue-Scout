@@ -1,17 +1,18 @@
-import { data } from './data.js'
 import { GoIssueOpened, GoIssueClosed } from "react-icons/go"
 import { FaRegCircle } from "react-icons/fa";
 import './Card.css'
 
-function Card(){
+function Card({ organizationName, description , openIssues , closedIssues, contributors}){
     return(
-        <div className="organization-list">
-            <h1 className="org-name">Organization name</h1>
-            <p className="org-details">organization details</p>
-            <div className="issue-details">
-                <span className="open-issue"><GoIssueOpened color="#56d364" />ewesdf</span>
-                <span className="close-issue"><GoIssueClosed color="#8250df" />sdfwwer</span>
-                <span className="contributors">👥sdffer</span>
+        <div className="org-container">
+            <div className="organization-list">
+                <h1 className="org-name">{ organizationName }</h1>
+                <p className="org-details">{ description }</p>
+                <div className="issue-details">
+                    <span className="open-issue"><GoIssueOpened color="#56d364" />20 { openIssues }</span>
+                    <span className="close-issue"><GoIssueClosed color="#8250df" />11 { closedIssues }</span>
+                    <span className="contributors">👥 12 { contributors }</span>
+                </div>
             </div>
         </div>
     )
