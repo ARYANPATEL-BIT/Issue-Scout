@@ -27,6 +27,7 @@ function Search(){
             <div>
                 {filterData.map((org) => (
                     <Card 
+                        key={org.organizationName}  
                         organizationName ={org.organizationName}
                         description = {org.description}
                         openIssues = {org.openIssues}

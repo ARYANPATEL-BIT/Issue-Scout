@@ -1,7 +1,7 @@
 .org-container{
     display:flex;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     margin-bottom: 20px;
 }
 
@@ -13,7 +13,7 @@
     border: 1px solid #8b949e;
     border-radius: 6px;
     height: 150px;
-    width: 80vw;
+    width: 70vw;
 }
 
 .organization-list .org-name{
