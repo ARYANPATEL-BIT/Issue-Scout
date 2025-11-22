@@ -1,0 +1,38 @@
+.org-text {
+    display: block;
+    font-weight: bold;
+    font-family: -apple-system,system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #c9d1d9;
+    font-size: 20px;
+    margin-left: 10vw;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+
+.input-wrapper{
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    margin: 20px;
+    padding-left:10px;
+    width: 80vw ;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-radius: 10px;
+    size: 10px;
+}
+
+.input{
+    height: 10%;
+    width: 100%;
+    border: none;
+    background-color: #161b22;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input::placeholder{
+    color:#8b949e;
+}

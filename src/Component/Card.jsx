@@ -1,4 +1,5 @@
 import { data } from './data.js'
+import { FaSearch } from "react-icons/fa";
 import { GoIssueOpened, GoIssueClosed } from "react-icons/go"
 import { FaRegCircle } from "react-icons/fa";
 import './Card.css'
