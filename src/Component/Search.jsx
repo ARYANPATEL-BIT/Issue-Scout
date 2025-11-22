@@ -7,9 +7,9 @@ import { data } from './data.js'
 
 function Search(){
 
-    // const [searchOrg, setSearchOrg] = useState("");
-    // const filterData = data.filter((org) =>
-    //    org.organizationName.toLowerCase().includes(searchOrg.toLowerCase()))
+    const [searchOrg, setSearchOrg] = useState("");
+    const filterData = data.filter((org) =>
+       org.organizationName.toLowerCase().includes(searchOrg.toLowerCase()))
 
     return(
         <div className="search-Bar">
@@ -35,11 +35,12 @@ function Search(){
                     />
                 ))}
             </div>
+            <div>
                 <FaSearch id="search-icon"/>
                 <input placeholder="Search Organizations..."/>
             </div>
         </div>
-    )
+    )   
 }
 
 export default Search
