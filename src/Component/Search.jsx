@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaSearch } from "react-icons/fa";
 import './Search.css'
 import Card from './Card.jsx'
-import { FaSearch } from "react-icons/fa";
+import { data } from './data.js'
 
 
 function Search(){
+
+    // const [searchOrg, setSearchOrg] = useState("");
+    // const filterData = data.filter((org) =>
+    //    org.organizationName.toLowerCase().includes(searchOrg.toLowerCase()))
+
     return(
 
         <div className="search-Bar">
@@ -12,11 +18,23 @@ function Search(){
             
             <div className="input-wrapper">
                 <FaSearch id="search-icon" color="#c9d1d9" size={21}/>
-                <input className="input" placeholder="Search Organizations..."/>
+                <input 
+                    className="input"  
+                    placeholder="Search Organizations..."
+                    onChange={(e) => setSearchOrg(e.target.value)}
+                    />
             </div>
 
             <div>
-                <Card />
+                {filterData.map((org) => (
+                    <Card 
+                        organizationName ={org.organizationName}
+                        description = {org.description}
+                        openIssues = {org.openIssues}
+                        closedIssues = {org.closedIssues}
+                        contributors = {org.contributors}
+                    />
+                ))}
             </div>
         </div>
     )

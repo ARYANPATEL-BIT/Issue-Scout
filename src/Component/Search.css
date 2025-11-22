@@ -10,7 +10,6 @@
 }
 
 .input-wrapper{
-    
     display: flex;
     align-items: center;
     gap: 10px;
@@ -31,6 +30,7 @@
     background-color: #161b22;
     border-radius: 5px;
     padding: 10px;
+    color: #c9d1d9;
 }
 
 .input::placeholder{
