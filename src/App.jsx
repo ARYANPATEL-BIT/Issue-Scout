@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Profile from './Component/Profile'
 import Navbar  from './Component/Navbar'
+import Search from './Component/Search'
 
 function App() {
   return(
@@ -11,6 +10,8 @@ function App() {
       <Navbar />
 
       <Profile />
+
+      <Search />
 
     </div>
   )

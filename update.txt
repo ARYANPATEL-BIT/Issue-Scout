@@ -1,4 +1,4 @@
-Aryan , 18/11/2015
+Aryan , 18/11/2025
 
 1. Set up react folder
 2. SetUp the Tailwindcss
@@ -25,3 +25,11 @@ pradhyum , 20/11/2025
 
 1. writing code for HomePage
 
+
+Aryan Patel 21/11/2025
+1. created Navbar
+2. created Profile
+
+
+Aryan Patel 22/11/2025
+1. created Searchbar
