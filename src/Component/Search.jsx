@@ -1,9 +1,9 @@
+
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import './Search.css'
 import Card from './Card.jsx'
 import { data } from './data.js'
-
 
 function Search(){
 
@@ -12,7 +12,6 @@ function Search(){
     //    org.organizationName.toLowerCase().includes(searchOrg.toLowerCase()))
 
     return(
-
         <div className="search-Bar">
             <h2 className="org-text">Organizations</h2>
             
@@ -35,6 +34,9 @@ function Search(){
                         contributors = {org.contributors}
                     />
                 ))}
+            </div>
+                <FaSearch id="search-icon"/>
+                <input placeholder="Search Organizations..."/>
             </div>
         </div>
     )
