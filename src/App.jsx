@@ -1,18 +1,16 @@
-import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import './App.css'
-import Profile from './Component/Profile'
-import Navbar  from './Component/Navbar'
-import Search from './Component/Search'
+import Organizations from './pages/Organizations'
 
 function App() {
   return(
-    <div>
-      <Navbar />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/organization" />} />
 
-      <Profile />
-
-      <Search />
-    </div>
+        <Route path='/organization' element={<Organizations />}></Route>
+      </Routes>
+    </Router>
   )
 }
 
