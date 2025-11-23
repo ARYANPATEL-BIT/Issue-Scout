@@ -1,44 +1,49 @@
-.org-container{
-    display:flex;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-bottom: 20px;
-    cursor:pointer;
-}
-
-.organization-list{
+.details{
     background-color: #161b22;
-    display:block;
+    border: 1px solid #30363d;
+}
+.container{
+    display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #8b949e;
-    border-radius: 6px;
-    height: 150px;
-    width: 70vw;
-}
-
-.organization-list .org-name{
-    color: #c9d1d9;
-    font-size: 18px;
-    margin-bottom: 4px;
-    font-weight: 600;
-    padding-top: 1px;
-    font-size: 20px;
-    padding-left: 20px;
-    padding-bottom: 7px;
-}
-
-.organization-list .org-details{
-    color: #8b949e;
-    font-size: 14px;
-    box-sizing: border-box;
-    padding-left: 20px;
-}
-
-.issue-details{
-    display: flex;
     flex-direction: row;
-    padding: 10px;
+}
+
+.back{
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    padding: 5px;
+    border-radius: 5px;
+    text-wrap: wrap;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.back-class{
+    width: 30vw;
+}
+
+.org-name{
+    color: #c9d1d9;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-wrap: wrap;
+    margin-left: 10px;
+}
+
+.org-per-detials{
+    margin-left: 30px;
+}
+
+.org-info{
+    color: #8b949e;
+    margin: 10px;
+    text-wrap:wrap;
+}
+
+.org-issue-info{
+    display: flex;
 }
 
 .open-issue{
@@ -60,6 +65,7 @@
     gap: 5px;
     padding: 10px;
 }
+
 .contributors{
     display: flex;
     justify-content: center;

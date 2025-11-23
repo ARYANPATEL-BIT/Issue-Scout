@@ -8,8 +8,10 @@ import { data } from './data.js'
 function Search(){
 
     const [searchOrg, setSearchOrg] = useState("");
+
     const filterData = data.filter((org) =>
-       org.organizationName.toLowerCase().includes(searchOrg.toLowerCase()))
+       org.organizationName.toLowerCase().includes(searchOrg.toLowerCase())
+    );
 
     return(
         <div className="search-Bar">
@@ -27,7 +29,8 @@ function Search(){
             <div>
                 {filterData.map((org) => (
                     <Card 
-                        key={org.organizationName}  
+                        key={org.organizationName} 
+                        id={org.id}
                         organizationName ={org.organizationName}
                         description = {org.description}
                         openIssues = {org.openIssues}

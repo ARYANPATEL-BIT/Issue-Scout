@@ -1,10 +1,16 @@
 import { GoIssueOpened, GoIssueClosed } from "react-icons/go"
-import { FaRegCircle } from "react-icons/fa";
+import { useNavigate } from "react-router-dom"
 import './Card.css'
 
-function Card({ organizationName, description , openIssues , closedIssues, contributors}){
+function Card({ id,organizationName, description , openIssues , closedIssues, contributors}){
+    const navigate  = useNavigate();
+
+    const handleClick = () => {
+        navigate(`/organization/${id}`);
+    };
+
     return(
-        <div className="org-container">
+        <div className="org-container" onClick={handleClick} >
             <div className="organization-list">
                 <h1 className="org-name">{ organizationName }</h1>
                 <p className="org-details">{ description }</p>
