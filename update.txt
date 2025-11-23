@@ -33,3 +33,12 @@ Aryan Patel 21/11/2025
 
 Aryan Patel 22/11/2025
 1. created Searchbar
+2. worked on the cards for Organization
+
+
+Aryan Patel 23//11/2025
+1. Made the searchbar work
+2. set up routes
+3. made a page for Organization
+4. created a page to display issues of the specific organization.
+5. created a button that will take you back to the previous page
