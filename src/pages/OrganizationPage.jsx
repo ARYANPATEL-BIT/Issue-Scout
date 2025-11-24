@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import Navbar from '../Component/Navbar'
-import IssueList from "../Component/IssueList.jsx";
+import IssueList from '../Component/issuelist.jsx';
 import { data } from '../Component/data.js';
 import './OrganizationPage.css'
 import { GoIssueOpened, GoIssueClosed } from "react-icons/go"
@@ -34,7 +34,7 @@ function OrganizationPage(){
             </div>
 
             <div>
-                <IssueList issues={org.issues}/>
+                <IssueList />
             </div>
         </div>
 
