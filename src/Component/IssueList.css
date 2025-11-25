@@ -10,6 +10,10 @@
     min-width: 200px;
 }
 
+.issue-card{
+    cursor:pointer;
+}
+
 .input-issue::placeholder{
     color: #8b949e;
     padding-left: 1px;

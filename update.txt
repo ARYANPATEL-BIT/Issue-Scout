@@ -42,3 +42,7 @@ Aryan Patel 23//11/2025
 3. made a page for Organization
 4. created a page to display issues of the specific organization.
 5. created a button that will take you back to the previous page
+
+
+Aryan Patel 24/11/25
+1. 

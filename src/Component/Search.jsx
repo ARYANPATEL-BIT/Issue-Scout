@@ -1,50 +1,49 @@
-
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import './Search.css'
-import Card from './Card.jsx'
-import { data } from './data.js'
+import "./Search.css";
+import Card from "./Card.jsx";
+import { data } from "./data.js";
 
-function Search(){
+function Search() {
+  const [searchOrg, setSearchOrg] = useState("");
 
-    const [searchOrg, setSearchOrg] = useState("");
+  const filterData = data.filter((org) =>
+    org.organizationName.toLowerCase().includes(searchOrg.toLowerCase())
+  );
 
-    const filterData = data.filter((org) =>
-       org.organizationName.toLowerCase().includes(searchOrg.toLowerCase())
-    );
+  return (
+    <div className="search-Bar">
+      <h2 className="org-text">Organizations</h2>
 
-    return(
-        <div className="search-Bar">
-            <h2 className="org-text">Organizations</h2>
-            
-            <div className="input-wrapper">
-                <FaSearch id="search-icon" color="#c9d1d9" size={21}/>
-                <input 
-                    className="input"  
-                    placeholder="Search Organizations..."
-                    onChange={(e) => setSearchOrg(e.target.value)}
-                    />
-            </div>
+      <div className="input-wrapper">
+        <FaSearch id="search-icon" color="#c9d1d9" size={21} />
+        <input
+          className="input"
+          placeholder="Search Organizations..."
+          onChange={(e) => setSearchOrg(e.target.value)}
+        />
+      </div>
 
-            <div>
-                {filterData.map((org) => (
-                    <Card 
-                        key={org.organizationName} 
-                        id={org.id}
-                        organizationName ={org.organizationName}
-                        description = {org.description}
-                        openIssues = {org.openIssues}
-                        closedIssues = {org.closedIssues}
-                        contributors = {org.contributors}
-                    />
-                ))}
-            </div>
-            <div>
-                <FaSearch id="search-icon"/>
-                <input placeholder="Search Organizations..."/>
-            </div>
-        </div>
-    )   
+      <div>
+        {filterData.map((org) => (
+          <Card
+            key={org.organizationName}
+            id={org.id}
+            organizationName={org.organizationName}
+            description={org.description}
+            openIssues={org.openIssues}
+            closedIssues={org.closedIssues}
+            contributors={org.contributors}
+          />
+        ))}
+      </div>
+      <div>
+        <FaSearch id="search-icon" />
+        <input placeholder="Search Organizations..." />
+      </div>
+      
+    </div>
+  );
 }
 
-export default Search
+export default Search;
