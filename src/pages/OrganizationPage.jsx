@@ -34,7 +34,7 @@ function OrganizationPage(){
             </div>
 
             <div>
-                <IssueList />
+                <IssueList issues={org.issues}/>
             </div>
         </div>
 
