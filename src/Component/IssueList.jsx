@@ -8,6 +8,25 @@ function IssueList({ issues }) {
   const filterIssue = issues.filter((issue)=>
     issue.title?.toLowerCase().includes(searchIssue.toLowerCase())
   );
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const issuesPerPage = 2;
+
+  const indexOfLastIssue = currentPage *  issuesPerPage;
+  const indexOfFirstIssue = indexOfLastIssue - issuesPerPage;
+
+  const currentIssues = filterIssue.slice(indexOfFirstIssue, indexOfLastIssue);
+
+  const totalPages = Math.ceil(filterIssue.length / issuesPerPage);
+
+  const nextPage = () => {
+    if(currentPage < totalPages) setCurrentPage(prev => prev + 1);
+  }
+
+  const prevPage = () => {
+    if(currentPage > 1) setCurrentPage(prev => prev -1);
+  }
+
   
   return (
     <div className="issue-container">
@@ -21,7 +40,7 @@ function IssueList({ issues }) {
       </div>
 
       <div className="issue-card">
-        {filterIssue.map((issue) =>
+        {currentIssues.map((issue) =>
 
           <div className="issue-row" key={issue.id}>
             <div className="issue-Details">
@@ -33,6 +52,19 @@ function IssueList({ issues }) {
             </div>
           </div>
         )}
+      </div>
+      <div className="pagination-info">
+        <div className='prev-btn'>
+          <button onClick={prevPage} className='prev-Issue' disabled={currentPage === 1}>
+            Previous
+          </button>
+        </div>
+        <span className='display'>
+          Page { currentPage } of { totalPages }
+        </span>
+        <div className='next-btn'>
+          <button className='next-issue' onClick={ nextPage } disabled={ currentPage === totalPages }>Next</button>
+        </div>
       </div>
     </div>
   );

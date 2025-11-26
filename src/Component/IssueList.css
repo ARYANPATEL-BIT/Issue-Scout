@@ -82,3 +82,38 @@
     border-radius: 15px;
 }
 
+.pagination-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev-Issue{
+    color: #c9d1d9;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 20px;
+    transition: all 0.25s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.display{
+    color: #c9d1d9;
+}
+
+.next-issue{
+    color: #c9d1d9;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 20px;
+    transition: all 0.25s ease;
+    text-align: center;
+    cursor: pointer;
+}
