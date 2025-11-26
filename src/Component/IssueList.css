@@ -14,6 +14,7 @@
     cursor:pointer;
 }
 
+
 .input-issue::placeholder{
     color: #8b949e;
     padding-left: 1px;
@@ -41,6 +42,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.25s ease ;
+}
+
+
+.issue-row:hover{
+    transform: translateY(-4px);
 }
 
 .issue-Details{

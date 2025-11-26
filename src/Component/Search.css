@@ -36,3 +36,54 @@
 .input::placeholder{
     color:#8b949e;
 }
+
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-prev{
+    border: 1px solid ;
+    color: #c9d1d9;
+    padding: 7px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-prev:active{
+    background-color: #8b949e;
+}
+
+.btn-prev:hover{
+    transform: translate(-1px,-1px);
+}
+
+.pages{
+    color: #c9d1d9;
+}
+
+.btn-next{
+    color: #c9d1d9;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 20px;
+    transition: all 0.25s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-next:hover{
+    transform: translate(-1px, -1px);
+}
+
+.btn-next:active{
+    background-color: #8b949e;
+}
