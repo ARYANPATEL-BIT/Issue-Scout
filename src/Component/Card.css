@@ -4,6 +4,12 @@
     margin-right: 15vw;
     margin-bottom: 20px;
     cursor:pointer;
+    transition: all 0.25s ease;
+    border: 1px solid;
+}
+
+.org-container:hover{
+    transform: translateY(-4px);
 }
 
 .organization-list{
@@ -11,10 +17,10 @@
     display:block;
     justify-content: center;
     align-items: center;
-    border: 1px solid #8b949e;
-    border-radius: 6px;
     height: 150px;
     width: 70vw;
+    border: 1px solid #8b949e;
+    border-radius: 6px;
 }
 
 .organization-list .org-name{
