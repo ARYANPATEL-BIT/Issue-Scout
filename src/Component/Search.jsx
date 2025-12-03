@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import "./Search.css";
 import Card from "./Card.jsx";
@@ -16,7 +16,6 @@ function Search() {
 
   const  indexOfLastOrg = currentPage * orgsPerPage;
   const indexOfFirstOrg = indexOfLastOrg - orgsPerPage;
-
 
   const currentOrgs = filterData.slice(indexOfFirstOrg, indexOfLastOrg);
 

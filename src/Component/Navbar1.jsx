@@ -1,6 +1,6 @@
-import './Navbar.css'
+import './Navbar1.css'
 
-function Navbar(){
+function Navbar1(){
     return(
         <>
         <div className="navbar">
@@ -16,4 +16,4 @@ function Navbar(){
     )
 }
 
-export default Navbar
+export default Navbar1

@@ -1,14 +1,13 @@
-import { useState } from 'react'
 import '../App.css'
 import Profile from '../Component/Profile'
-import Navbar  from '../Component/Navbar'
+import Navbar1  from '../Component/Navbar1'
 import Search from '../Component/Search'
 
 
 function Organizations() {
   return(
     <div>
-      <Navbar />
+      <Navbar1 />
 
       <Profile />
 

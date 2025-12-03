@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom'
-import Navbar from '../Component/Navbar'
+import Navbar1 from '../Component/Navbar1'
 import IssueList from '../Component/issuelist.jsx';
 import { data } from '../Component/data.js';
 import './OrganizationPage.css'
@@ -14,7 +14,7 @@ function OrganizationPage(){
 
     return (
         <div>
-            <Navbar />
+            <Navbar1 />
 
             <div className='details'>
                 <div className='container'>
