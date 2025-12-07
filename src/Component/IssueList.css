@@ -1,119 +1,184 @@
-.input-issue{
+.issue-container {
+    padding: 0 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.myh1 {
+    color: #c9d1d9;
+    margin: 30px 0 20px 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-issue {
     background-color: #161b22;
     border: 1px solid #30363d;
-    width: 25vw;
+    width: 100%;
+    max-width: 400px;
     font-size: 14px;
-    height: 35px;
+    height: 40px;
     border-radius: 5px;
-    color:#c9d1d9;
+    color: #c9d1d9;
     padding: 10px;
-    min-width: 200px;
 }
 
-.issue-card{
-    cursor:pointer;
-}
-
-
-.input-issue::placeholder{
+.input-issue::placeholder {
     color: #8b949e;
     padding-left: 1px;
 }
 
-.myh1{
-    color: #c9d1d9;
-    margin-top: 30px;
-    font-size: 25px;
-    font-weight: 600;
-    padding-bottom: 20px;
+.issue-card {
+    cursor: pointer;
 }
 
-.issue-container{
-    margin-left: 10vw;
-    margin-right:10vw;
-}
-
-.issue-row{
+.issue-row {
     background-color: #161b22;
-    margin-top: 30px;
+    margin: 20px 0;
     border-radius: 5px;
     border: 1px solid #30363d;
-    height: 115px;
+    padding: 20px;
+    transition: all 0.25s ease;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.25s ease ;
+    flex-wrap: wrap;
 }
 
-
-.issue-row:hover{
+.issue-row:hover {
     transform: translateY(-4px);
 }
 
-.issue-Details{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.issue-Details {
+    flex: 3;
+    min-width: 300px;
 }
 
-.issueName{
-    font-size: 25px;
+.issueName {
+    font-size: 20px;
     color: #c9d1d9;
-    text-wrap: wrap;
     font-weight: 600;
-    padding-left:15px;
+    margin: 0 0 10px 0;
 }
 
-.issueDetails{
+.issueDetails {
     color: #8b949e;
-    padding-top: 15px;
-    margin-left: 15px;
+    margin: 0 0 15px 0;
+    line-height: 1.5;
 }
 
-.tag{
-    margin: 20px;
-    padding: 7px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 15px;
-    border:none;
-    background-color: #30363d;
-    color: #8b949e;
+.tag {
+    flex: 1;
+    min-width: 150px;
+    margin: 0;
+    padding: 8px 15px;
+    font-size: 14px;
+    border: none;
+    background-color:#3FB950;
+    color: white;
     border-radius: 15px;
+    text-align: center;
 }
 
-.pagination-info{
+.pagination-info {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
 }
 
-.prev-Issue{
+.prev-Issue, .next-issue {
     color: #c9d1d9;
-    border: 1px solid;
+    border: 1px solid #30363d;
     border-radius: 10px;
-    padding: 7px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 20px;
-    transition: all 0.25s ease;
-    text-align: center;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #161b22;
     cursor: pointer;
+    transition: all 0.25s ease;
+    font-size: 14px;
 }
 
-.display{
-    color: #c9d1d9;
+.prev-Issue:hover, .next-issue:hover {
+    background-color: #21262d;
+    transform: translate(-1px, -1px);
 }
 
-.next-issue{
+.prev-Issue:disabled, .next-issue:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.display {
     color: #c9d1d9;
-    border: 1px solid;
-    border-radius: 10px;
-    padding: 7px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 20px;
-    transition: all 0.25s ease;
-    text-align: center;
-    cursor: pointer;
+    margin: 10px;
+    white-space: nowrap;
+}
+
+/* Responsive Issue List */
+@media (max-width: 768px) {
+    .issue-container {
+        padding: 0 4%;
+    }
+    
+    .myh1 {
+        font-size: 22px;
+        text-align: center;
+        margin: 25px 0 15px 0;
+    }
+    
+    .input-issue {
+        max-width: 100%;
+    }
+    
+    .issue-row {
+        padding: 15px;
+        margin: 15px 0;
+    }
+    
+    .issueName {
+        font-size: 18px;
+    }
+    
+    .issueDetails {
+        font-size: 14px;
+    }
+    
+    .tag {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+    
+    .pagination-info {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .issue-row {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    
+    .issue-Details {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .tag {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .prev-Issue, .next-issue {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
 }

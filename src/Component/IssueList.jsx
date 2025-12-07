@@ -49,11 +49,10 @@ function IssueList({ issues }) {
               <p className="issueDetails">{issue.description}</p>
             </div>
             <div className="tag">
-              <p className="change">{issue.status}</p>
+              <p className="change" >{issue.status}</p>
             </div>
           </div>
          </div>
-
         )}
       </div>
       <div className="pagination-info">
